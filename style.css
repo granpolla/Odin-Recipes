@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #EEE2DE;
+    color: #2B2A4C;
+}
+
+.container {
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.header,
+.titles {
+    margin-top: 35px;
+}
+
+.header h1::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #B31312;
+    position: absolute;
+    left: 488px;
+    top: 55px;
+}
+.header h1::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #B31312;
+    position: absolute;
+    right: 488px;
+    top: 55px;
+}
+
+.header h1{
+    margin-bottom: 10px;
+}
+
+.header img{
+    border-radius: 10px;
+}
+
+.titles li{
+    display: inline-block;
+}
+
+.titles a{
+    text-decoration: none;
+}
+
+.titles img{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* recipes */
+
+.recipe-head img{
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.recipe-head p {
+    font-style: italic;
+}
+
+.recipe-head h1,h2 {
+    font-family: 'Arvo', serif;
+}
+
+.recipe-head p{
+    opacity: 0.8;
+}
+
+.recipe-content {
+    text-align: center;
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-ingredients,
+.recipe-steps {
+    text-align: left;
+}
+
+.recipe-ingredients li{
+    list-style-type: square;
+}
+
+.recipe-steps li{
+    list-style-type: none;
+}
+
+.recipe-ingredients ul,
+.recipe-steps li{
+    border: 2px solid #2B2A4C;;
+    border-radius: 10px;
+    margin: 10px 10px 28px 20px;
+    padding: 15px 30px 15px 30px;
+}
+
+.recipe-content h3{
+    font-family: 'Arvo', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.recipe-steps b{
+    font-family: 'Arvo', serif;
+    font-style: italic;
+}
+
+.recipe-content h1,h3 {
+    margin-top: 30px;
+}
