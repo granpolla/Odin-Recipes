@@ -47,6 +47,11 @@
     width: 200px;
 }
 
+.links img {
+    width: 200px;
+    height: 200px;
+}
+
 .title {
     font-size: 20px;
     padding: 5px 0 10px 0;
