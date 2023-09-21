@@ -1,137 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* main page*/
+.header-navbar {
+    width: 100%;
+    background-color: #222223;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.navbar a {
+    color: white;
+    padding-left: 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.main-content {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.label-recipe{
+    font-size: 4rem;
+    padding: 50px;
+}
+
+.recipe-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.links {
+    margin-top: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 200px;
+}
+
+.title {
+    font-size: 20px;
+    padding: 5px 0 10px 0;
+    font-weight: 900;
+}
+
+.title span {
+    font-weight: normal;
+    font-style: italic;
     font-size: 18px;
 }
+/* */
 
-h1,h3{
-    font-family: 'Arvo', serif;
-}
-
-.front-page-header h1 {
-    font-size: 50px;
-    margin: 20px 0 15px 0;
-}
-
-.front-page-link h3 {
-    font-size: 40px;
-    margin: 55px 0 15px 0;
-}
-
-.front-page-header,
-.front-page-link {
-    text-align: center;
-}
-
-.front-page-link li {
-    display: inline-block;
-    font-family: 'Arvo',serif;
-    margin-right: 20px;
-    font-size: 20px;
-    padding: 15px;
-}
-
-/* start recipe content */
-
-.content {
+/* parent container */
+.parent-content {
     display: flex;
     justify-content: center;
 }
 
-.recipe-content {
+.child {
     width: 600px;
-    margin: 50px;
+    margin: 20px;
 }
+/* end */
 
+/* recipe content */
 .recipe-content h1 {
-    font-size: 46px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
 }
 
-.recipe-head h3{
-    margin-top: 7px;
-}
-
-.recipe-content h3{
+.recipe-content h3 {
     font-size: 30px;
-    margin: 10px 0px 10px 0px;
+    padding: 10px 0 10px 0;
+    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+}
+.recipe-content .recipe-ingredients ul{
+    padding-left: 16px;
 }
 
-.recipe-ingredients li {
-    margin-left: 16px;
-    padding: 0px 0 10px 0;
+.recipe-content li {
+    padding-bottom: 20px;
+}
+
+.recipe-content {
+    font-family: 'Poppins', sans-serif;
 }
 
 .recipe-directions li {
     list-style-type: none;
-    padding: 15px 0 0 0;
 }
+/* end */
 
-/* end recipe content*/
-
-/* start nutrition facts */
+/* nutrition facts */
+.nutrition-box {
+    width: 448px;
+    height: fit-content;
+    border: 2px solid black;
+}
 
 .nutrition-facts table{
     width: 400px;
     text-align: left;
     border-collapse: collapse;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-top: 10px;
+    margin: 24px 24px 24px 24px;
+    border-top: 7px solid black;
+    border-bottom: 7px solid black;
 }
 
-.box {
-    border: 1px solid black;
-    height: 958px;
-    margin: 50px;
+.nutrition-header {
+    margin: 24px 24px 0 24px;
+    width: 400px;
 }
 
-.nutrition-facts .nutrition-label-right td {
+.nutrition-header .header {
+    border-bottom: 1px solid darkgray;
+    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nutrition-header h2 {
+    font-size: 57px;
+}
+
+.sub-header h3{
+    font-family: 'Franklin Gothic low', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nutrition-footer {
+    margin: 0 24px 24px 24px;
+    font-family: 'Franklin Gothic low', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nutrition-label-right td{
     text-align: right;
-    padding: 5px 0 5px 0;
 }
 
 .nutrition-body .value {
     text-align: right;
-    padding: 5px;
-}
-
-.sub-heading {
-    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
-    font-weight: lighter;
-}
-
-.separator {
-    height: 20px;
-    border-bottom: 1px solid black;
-    border-width: 7px;
 }
 
 .nutrition-body td {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid darkgray;
+    padding: 5px 0 5px 0;
 }
 
-.nutrition-header-left .heading{
-    border-bottom: 1px solid black;
+.nutrition-body .label span{
+    font-weight: bold;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
 }
-
-.nutrition-facts .heading th {
-    font-size: 51px;
-    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-.label span {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.nutrition-facts .nutrition-footer p {
-    width: 400px;
-    padding: 20px 24px 0px 24px;
-}
-
-.nutrition-footer span {
-    text-decoration: underline;
-}
-
-/* end nutrition facts */
+/* end */

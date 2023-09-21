@@ -12,24 +12,85 @@
     />
     <title>TOP Recipe</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/logo2.png" />
   </head>
   <body>
-    <div class="front-page-header">
-      <h1>The Odin Recipes</h1>
+    <!-- start navbar-->
+    <header class="header-navbar">
       <img
-        src="./images/The Odin Recipes.png"
-        alt="Odin"
+        src="./images/logo2.png"
+        alt="logo"
+        class="logo"
+        width="50px"
         height="auto"
-        width="600"
       />
-    </div>
-    <div class="front-page-link">
-      <h3>RECIPES</h3>
-      <ul>
-        <li><a href="./recipes/adobo.html">Famous Chicken Adobo</a></li>
-        <li><a href="./recipes/tinola.html">Chicken Tinola</a></li>
-        <li><a href="./recipes/kare-kare.html">Kare kare (Oxtail Stew)</a></li>
+      <nav class="navbar">
+        <a href="https://www.facebook.com/">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="location-outline"></ion-icon>
+        </a>
+      </nav>
+    </header>
+    <!-- end  -->
+
+    <!-- start recipes -->
+    <main class="main-content">
+      <h1 class="label-recipe">RECIPES</h1>
+      <ul class="recipe-links">
+        <li class="links">
+          <a href="./recipes/adobo.html">
+            <img
+              src="./images/adobo_logo.png"
+              alt="adobo"
+              height="auto"
+              width="200px"
+            />
+          </a>
+          <div class="title">Famous Chicken Adobo</div>
+        </li>
+        <li class="links">
+          <a href="./recipes/tinola.html">
+            <img
+              src="./images/adobo_logo.png"
+              alt="adobo"
+              height="auto"
+              width="200px"
+            />
+          </a>
+          <div class="title">Chicken Tinola</div>
+        </li>
+        <li class="links">
+          <a href="./recipes/kare-kare.html">
+            <img
+              src="./images/adobo_logo.png"
+              alt="adobo"
+              height="auto"
+              width="200px"
+            />
+          </a>
+          <div class="title">
+            Kare kare <br />
+            <span>(oxtail stew)</span>
+          </div>
+        </li>
       </ul>
-    </div>
+    </main>
+    <!-- end -->
+
+    <!-- icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!---->
   </body>
 </html>
