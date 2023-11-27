@@ -58,21 +58,14 @@ main {
     font-family: 'Poppins', sans-serif;
     background-color: #222223;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
-
+    align-items: center;
+    height: 50px;
 }
 
 .text-line {
     font-size: 25px;
     color: whitesmoke;
-}
-
-.line {
-    border:1px solid whitesmoke;
-    flex-grow: 1;
-    margin: 30px;
 }
 /* end */
 
@@ -80,17 +73,17 @@ main {
 .parent-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .child {
-    width: 600px;
     margin: 20px;
 }
 /* end */
 
 /* recipe content */
 .recipe-content h1 {
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -109,6 +102,7 @@ main {
 
 .recipe-content {
     font-family: 'Poppins', sans-serif;
+    width: 580px;
 }
 
 .recipe-directions li {
@@ -117,59 +111,48 @@ main {
 /* end */
 
 /* nutrition facts */
-.nutrition-box {
-    width: 448px;
-    height: fit-content;
-    border: 2px solid black;
+.nutrition-facts {
+    border: 1px solid darkgray;
+    width: 500px;
+    padding: 0 20px 30px 20px;
+    height: 100%;
 }
 
-.nutrition-facts table{
-    width: 400px;
-    text-align: left;
-    border-collapse: collapse;
-    margin: 24px 24px 24px 24px;
-    border-top: 7px solid black;
-    border-bottom: 7px solid black;
+.nutrition-facts-header {
+    border-bottom: 5px solid black;
+    padding-bottom: 5px;
 }
 
-.nutrition-header {
-    margin: 24px 24px 0 24px;
-    width: 400px;
-}
-
-.nutrition-header .header {
-    border-bottom: 1px solid darkgray;
+.nutrition-facts-header h2{
+    font-size: 60px;
     font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
 }
 
-.nutrition-header h2 {
-    font-size: 57px;
+.nutrition-facts-header p {
+    font-size: 20px;
 }
 
-.sub-header h3{
-    font-family: 'Franklin Gothic low', 'Arial Narrow', Arial, sans-serif;
+.nutrition-facts-content {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 5px solid black;
 }
 
-.nutrition-footer {
-    margin: 0 24px 24px 24px;
-    font-family: 'Franklin Gothic low', 'Arial Narrow', Arial, sans-serif;
-}
-
-.nutrition-label-right td{
-    text-align: right;
-}
-
-.nutrition-body .value {
-    text-align: right;
-}
-
-.nutrition-body td {
+.nutrition-facts-content tr {
     border-bottom: 1px solid darkgray;
-    padding: 5px 0 5px 0;
+    line-height: 30px;
 }
 
-.nutrition-body .label span{
-    font-weight: bold;
-    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+.nutrition-facts-content, 
+.nutrition-facts-label {
+    text-align: left;
+}
+
+.nutrition-facts-content td {
+    text-align: right;
+}
+
+.nutrition-facts-bottom-info {
+    padding: 15px 0 15px 0;
 }
 /* end */
